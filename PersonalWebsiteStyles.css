@@ -227,7 +227,7 @@ header .nav-links li:hover::after {
 
 .checkpoint .description {
     color: var(--primary-text-color);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .center-line {
@@ -348,6 +348,7 @@ header .nav-links li:hover::after {
 .course-work-description {
     padding: 5px 0px 10px 50px;
     line-height: 20px;
+    font-weight: lighter;
 }
 
 
