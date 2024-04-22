@@ -533,8 +533,6 @@ svg {
     z-index: -1;
 }
 
-
-
 .contact-left button img {
     height: 15px;
 }
@@ -564,6 +562,7 @@ svg {
 .contact-right img {
     width: 50px;
     padding-right: 15px;
+    z-index:-1;
 }
 
 /* -- Footer Section ------------------------------------------------------------------------ */
