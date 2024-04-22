@@ -118,7 +118,7 @@ header ul li:hover::after {
 .menu-bar {
     cursor: pointer;
     padding: 4vw;
-    transform: translate(-80px, -40px);
+    transform: translate(-80px, -30px);
     position: fixed;
     z-index: 999;
     display: none;
