@@ -559,9 +559,10 @@ svg {
     color: var(--highlight-color)
 }
 
-.contact-right img {
+.contact-images a img {
     width: 50px;
     padding-right: 15px;
+    position: relative;
     z-index: -1;
 }
 
