@@ -5,8 +5,8 @@
   /* Colors */
   --primary-font-color: #2A2D34;
   --secondary-font-color: gray;
-  --header-color: #c8c6af;
-  --background-color: #d7d0c8;
+  --header-color: #cecece;
+  --background-color: #e7e7e7;
   /* Fonts */
   --body-font: "Quicksand", sans-serif;
   --h1-font-size: 1.5rem;
@@ -35,9 +35,17 @@ body {
   letter-spacing: 1px;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 section {
   height: 100vh;
-  width: 100vw;
+  width: 70em;
+  /* background: red; */
 }
 
 .section_title {
@@ -176,9 +184,14 @@ a {
 #about_section {
   display: flex;
   align-items: center;
-  justify-content: start;
-  transform: translateY(-10%);
-  margin-left: 10vw;
+  justify-content: center;
+}
+
+.about_logo {
+  opacity: 0.1;
+  width: 500px;
+  position: absolute;
+  transform: translateY(-75px);
 }
 
 .name {
@@ -188,20 +201,29 @@ a {
   padding: 10px 0;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
+  transform: translateY(80px);
+}
 
-  /* background: blue; */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .intro p {
   font-size: 2.5vw;
+  font-weight: 200;
   height: 40px;
+  text-align: center;
+  transform: translateY(80px);
 }
 
 .info {
   position: relative;
 }
 
-.info::before {
+/* .info::before {
   content: '';
   right: -10px;
   top: 45%;
@@ -221,7 +243,7 @@ a {
   50% {
     opacity: 0;
   }
-}
+} */
 
 /* ==================================== Experience Section ==================================== */
 
@@ -231,10 +253,7 @@ a {
   justify-content: center;
   flex-direction: column ;
   overflow: hidden;
-}
-
-#experience_title {
-  transform: translateY(-70px);
+  gap: 50px;
 }
 
 .flip_cards {
@@ -243,8 +262,8 @@ a {
 }
 
 .card_container {
-  width: 600px;
-  height: 600px;
+  width: 30em;
+  height: 30em;
   perspective: 900px;
 }
 
@@ -259,7 +278,7 @@ a {
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
-  color: white
+  color: var(--primary-font-color);
 }
 
 .front, .back {
@@ -275,12 +294,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgba(64,64,87,1) 35%, rgba(44,57,60,1) 100%);
+  text-align: center;
+  background-color: #e5e5e5;
+
 }
 
 .job_logo {
   width: 90%;
-  opacity: 0.3;
+  opacity: 0.15;
   position: relative;
 }
 
@@ -303,13 +324,13 @@ a {
 }
 
 .back {
-  background-color: #3a3a3a;
+  background-color: #e5e5e5;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 100px;
+  padding: 0 50px;
   font-size: 25px;
   line-height: 40px;
 }
@@ -322,11 +343,38 @@ a {
   justify-content: center;
   flex-direction: row;
   overflow: hidden;
-  gap: 125px;
+  gap: 100px;
+}
+
+.left_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  transform: translateY(-50px);
+  /* background: red; */
 }
 
 #education_title {
-  transform: translateY(-100px);
+  font-size: 65px;
+}
+
+.university_logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  filter: drop-shadow(0 0 0.3rem black);
+  padding-right: 5px;
+}
+
+#csu-global_logo {
+  width: 150px;
+}
+
+#msoe_logo {
+  width: 120px
 }
 
 .education_containter {
@@ -340,13 +388,14 @@ a {
 
 .university-name {
   font-size: 30px;
+  font-weight: 450;
   margin-bottom: 0.2em;
 }
 
 .education-date {
   font-style: italic;
   font-size: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .university div p {
@@ -359,7 +408,6 @@ a {
 
 .course-work-title {
   font-size: 18px;
-  font-weight: bold;
 }
 
 .course-work-description {
@@ -368,7 +416,7 @@ a {
 }
 
 .divider {
-  width: 700px;
+  width: 650px;
   height: 1px;
   background: gray;
 
@@ -384,10 +432,6 @@ a {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-}
-
-#connect_title {
-  transform: translateY(-70px);
 }
 
 .contact-container {
@@ -477,7 +521,13 @@ a {
 }
 
 .contact-email a {
-  color: red;
+  color: var(--primary-font-color);
+  text-decoration: underline;
+  transition: transform 0.4s;
+}
+
+.contact-email a:hover {
+  color: blue;
 }
 
 .connect_social {
@@ -492,7 +542,7 @@ a {
 }
 
 .connect_social-link:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 } 
 
 /* ==================================== Footer ==================================== */

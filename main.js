@@ -15,7 +15,7 @@ if (navClose) {
 }
 
 // Typewriter
-const dynamicText = document.querySelector('.info')
+const dynamicText = document.querySelector('.finfo')
 const words = ['Mechanical Engineer', 'A.I. Engineer', 'Hockey Player']
 let wordIndex = 0
 let charIndex = 1
