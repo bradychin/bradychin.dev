@@ -4,197 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brady Chin</title>
-    <link rel="stylesheet" href="PersonalWebsiteStyles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head> 
-  <body>  
-
-    <header class="nav-bar">
-      <nav>
-        <a href="#" class="top">
-          <img src="assets/bc logo white.png" class="bc-logo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">
+          <img src="assets/bc-logo-black.png" class="bc-logo" alt="bc">
         </a>
-        <ul>
-          <!-- <li class="hideOnMobile">
-            <a href="https://linkedin.com/in/bradychin">
-              <img src="Images/In-White-96.png" class="nav-logos">
-            </a>
-          </li> -->
-          <li class="hideOnMobile"><a href="#" onclick=hideSidebar()>Home</a></li>
-          <li class="hideOnMobile"><a href="#experience-section">Experience</a></li>
-          <li class="hideOnMobile"><a href="#education-section">Education</a></li>
-          <li class="hideOnMobile"><a href="#connect-section">Connect</a></li>
-          <!-- <li class="hideOnMobile">
-            <a href="https://github.com/bradychin">
-              <img src="Images/github-mark-white.png" class="nav-logos">
-            </a>
-          </li> -->
-          <div class="menu-bar" onclick="changeMenuIcon()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#experience_section" class="nav_link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Experience</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#education_section" class="nav_link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Education</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#connect_section" class="nav_link">
+                <i class="ri-arrow-right-up-line"></i>
+                <span>Connect</span>
+              </a>
+            </li>
+          </ul>
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-large-line"></i>
           </div>
-        </ul>
-
-        <ul class="sidebar hideOnLaptop">
-          <li><a href="#" onclick=hideSidebar()>Home</a></li>
-          <li><a href="#experience-section" onclick=hideSidebar()>Experience</a></li>
-          <li><a href="#education-section" onclick=hideSidebar()>Education</a></li>
-          <li><a href="#connect-section" onclick=hideSidebar()>Connect</a></li>
-          <!-- <div class="sidebar-icons">
-            <li>
-              <a href="https://linkedin.com/in/bradychin">
-                <img src="Images/In-White-96.png" class="nav-logos">
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/bradychin">
-                <img src="Images/github-mark-white.png" class="nav-logos">
-              </a>
-            </li>
-          </div> -->
-        </ul>
-
+          <div class="nav_social">
+            <a href="https://linkedin.com/in/bradychin" target="_blank" class="nav_social-link">
+              <i class="ri-linkedin-line"></i>
+            </a>
+            <a href="https://github.com/bradychin" target="_blank" class="nav_social-link">
+              <i class="ri-github-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </nav>
-    </header>  
-
+    </header>
     <main>
-
-      <section id="about-section">
+      <section id="about_section">
         <div class="intro">
-          <h1>Brady Chin</h1>
-          <p>Mechanical and Artifical Intelligence Engineer</p>
-          <div class="mouse">
-            <div class="mouse-scroll"></div>
-          </div>
+          <img class="about_logo" src="assets/bc-logo-black.png">
+          <h1 class="name"><span class="type_name"></span></h1>
+          <p class="info" id="me">
+            <span>Mechanical Engineer<br></span>
+          </p>
+          <p class="info" id="ai">
+            <span>A.I. Engineer</span><br>
+          </p>
+          <p class="info" id="student">
+            <span>Masters Student</span>
+          </p>
+        </div>
+        <div class="scrolldown">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </section>
 
-      <section id="experience-section">
-        <div class="title">
-          <h2 class="section-header">Experience</h2>
-        </div>
-        <div class="experience-content">
-          <div class="job">
-            <div class="job-header">
-              <div class="job-header-section2">
-                <img class="job-logo" src="assets/vitrox-v-logo.png">
-                <div class="job-header-details">
-                  <h3>ViTrox Americas Inc</h3>
-                  <h4>Technical Support Engineer</h4>
+      <section id="experience_section">
+        <h2 class="section_title" id="experience_title">Experience</h2>
+        <div class="flip_cards">
+          <div class="card_container">
+            <div class="card" id="vitrox">
+              <div class="front">
+                <img class="job_logo" src="assets/vitrox-v-logo.png">
+                <div class="job_info">
+                  <p class="company">ViTrox Americas Inc.</p>
+                  <p class="job_title">Technical Support Engineer</p>
+                  <p class="job_date">June 2022 - Present</p>
                 </div>
               </div>
-              <div class="arrow" onclick="changeArrowIcon()">
-                <div class="left"></div>
-                <div class="right"></div>
+              <div class="back">
+                <p>
+                  Install, configure, and maintain automated vision machines used in printed circuit board manufacturing. 
+                  <br><br>Utilized advanced optical insepction, 3D x-ray inspection, and 6 axis advanced robotic vision machines. 
+                </p>
               </div>
-            </div>
-            <div class="job-details">
-              <p class="job-description">
-                Install, configure, and maintain automated vision machines used in printed circuit board manufacturing. 
-                Utilized advanced optical insepction, 3D x-ray inspection, and 6 axis advanced robotic vision machines. 
-              </p>
-              <p class="job-date">June 2022 - Present</p>
             </div>
           </div>
-
-          <div class="job">
-            <div class="job-header">
-              <div class="job-header-section2">
-                <img class="job-logo" src="assets/fii-logo.png">
-                <div class="job-header-details">
-                  <h3>Foxconn Industrial Internet USA</h3>
-                  <h4>Quality Engineer</h4>
+          <div class="card_container">
+            <div class="card" id="fii">
+              <div class="front">
+                <img class="job_logo" src="assets/fii-logo.png">
+                <div class="job_info">
+                  <p class="company">Foxconn USA</p>
+                  <p class="job_title">Quality Engineer</p>
+                  <p class="job_date">July 2021 - May 2022</p>
                 </div>
               </div>
-              <div class="arrow" onclick="changeArrowIcon()">
-                <div class="left"></div>
-                <div class="right"></div>
+              <div class="back">
+                <p>
+                  Designed and implemented quality control systems, conducted thorough inspections and tests on raw materials 
+                  and finished products.<br><br>Analyzed data to identify areas for improvement in the printed circuit board manufacturing process.
+                </p>
               </div>
-            </div>
-            <div class="job-details">
-              <p class="job-description">
-                Designed and implemented quality control systems, conducted thorough inspections and tests on raw materials 
-                and finished products, and analyzed data to identify areas for improvement in the printed circuit board manufacturing process.
-              </p> 
-              <p class="job-date">July 2021 - May 2022</p>
-            </div>
-          </div>
-
-          <div class="job">
-            <div class="job-header">
-              <div class="job-header-section2">
-                <img class="job-logo" src="assets/fii-logo.png">
-                <div class="job-header-details">
-                  <h3>Foxconn Industrial Internet USA</h3>
-                  <h4>Mechanical Engineer Intern</h4>
-                </div>
-              </div>
-              <div class="arrow" onclick="changeArrowIcon()">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="job-details">
-              <p class="job-description">
-                Built a strong engineering foundation by conducting incoming quality control and first article inspection processes
-                for new materials. 
-              </p>
-              <p class="job-date">June 2020 - August 2020</p>
-            </div>
-          </div>
-
-          <div class="job">
-            <div class="job-header">
-              <div class="job-header-section2">
-                <img class="job-logo" src="assets/tree-island-steel-logo.png">
-                <div class="job-header-details">
-                  <h3>Tree Island Steel</h3>
-                  <h4>Mechanical Engineer Co-op</h4>
-                </div>
-              </div>
-              <div class="arrow" onclick="changeArrowIcon()">
-                <div class="left"></div>
-                <div class="right"></div>
-              </div>
-            </div>
-            <div class="job-details">
-              <p class="job-description">
-                Gained hands on expereince with CAD modeling to design more efficient fabrication processes. 
-              </p>
-              <p class="job-date">June 2018 - August 2018</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="education-section">
-        <div class="title">
-          <h2 class="section-header">Education</h2>
+      <section id="education_section">
+        <div class="left_container">
+          <h2 class="section_title" id="education_title">Education</h2>
+          <div class="university_logos">
+            <img class="university_logos" id="csu-global_logo" src="assets/csu-global-logo.png">
+            <img class="university_logos" id="msoe_logo" src="assets/msoe-logo.jpg">
+          </div>
         </div>
-        <div class="education"> 
+        <div class="education_containter">
 
           <div class="university">
             <div id="CSU-global">
-              <img class="education-image" src="assets/csu-global-logo.png">
               <div>
-                <h2 class="university-name">Colorado State University Global</h2>
+                <p class="university-name">Colorado State University Global</p>
                 <p class="degree">Master of Science in Artificial Intelligence and Machine Learning</p>
                 <p class="education-date">March 2024 - Present (Expected graduation of January 2026)</p>
               </div>
             </div>
-            <div class="course-work">
-
-            </div>
+            <!-- <div class="course-work">
+              <p class="course-work-title"></p>
+              <p class="course-work-description">
+                
+              </p>
+              <p class="course-work-title"></p>
+              <p class="course-work-description">
+                
+              </p>
+            </div> -->
           </div>
 
           <div class="divider"></div>
 
           <div class="university">
             <div id="MSOE">
-              <img class="education-image" src="assets/msoe-logo.jpg">
               <div>
-                <h2 class="university-name">Milwaukee School of Engineering</h2>
+                <p class="university-name">Milwaukee School of Engineering</p>
                 <p class="degree">Bachelor of Science in Mechanical Engineering</p>
                 <p class="education-date">August 2017 - May 2021</p>
               </div>
@@ -211,14 +173,12 @@
               </p>
             </div>
           </div>
-          
+
         </div>
       </section>
 
-      <section id="connect-section">
-        <div class="title">
-          <h2 class="section-header">Lets Connect!</h2>
-        </div>
+      <section id="connect_section">
+        <h2 class="section_title" id="connect_title">Lets Connect!</h2>
         <div class="contact-container">
           <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div>
@@ -248,29 +208,23 @@
               </div>
               <div>
                 <p class="contact-header">Socials</p>
-                <p class="contact-images">
-                  <a href="https://linkedin.com/in/bradychin">
-                    <img src="assets/In-White-96.png" class="nav-logos">
+                <div class="connect_social">
+                  <a href="https://linkedin.com/in/bradychin" target="_blank" class="connect_social-link">
+                    <i class="ri-linkedin-line"></i>
                   </a>
-                  <a href="https://github.com/bradychin">
-                    <img src="assets/github-mark-white.png" class="nav-logos">
+                  <a href="https://github.com/bradychin" target="_blank" class="connect_social-link">
+                    <i class="ri-github-line"></i>
                   </a>
-                </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </main>
-    
     <footer>
       <p id="copyrights">Copyright © 2024 Brady Chin. All rights reserved.</p>
-    </footer>    
-    
-    <script src="./PersonalWebsite.js">
-      
-    </script>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
-    
