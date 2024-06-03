@@ -45,7 +45,6 @@ main {
 section {
   height: 100vh;
   width: 70em;
-  /* background: red; */
 }
 
 .section_title {
@@ -191,17 +190,23 @@ a {
   opacity: 0.1;
   width: 500px;
   position: absolute;
-  transform: translateY(-75px);
+  transform: translateY(-90px);
+  animation: logo_appear 4.5s ease-out;
+}
+
+.name_container {
+  display: inline-block;
 }
 
 .name {
   font-size: 6em;
   font-weight: 500;
+  text-align: center;
   text-transform: uppercase;
   padding: 10px 0;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
-  transform: translateY(80px);
+  transform: translateY(60px);
 }
 
 .intro {
@@ -211,39 +216,125 @@ a {
   flex-direction: column;
 }
 
-.intro p {
-  font-size: 2.5vw;
+.info {
+  position: relative;
+  font-size: 2em;
   font-weight: 200;
   height: 40px;
   text-align: center;
-  transform: translateY(80px);
+  transform: translateY(70px);
 }
 
-.info {
-  position: relative;
+#me {
+  animation: slide_in_me 2s ease-in;
+}
+#ai {
+  animation: slide_in_ai 2.2s ease-in;
+}
+#student {
+  animation: slide_in_student 2.4s ease-in;
 }
 
-/* .info::before {
-  content: '';
-  right: -10px;
-  top: 45%;
+.scrolldown {
   position: absolute;
-  height: 40px;
-  width: 2px;
-  background: black;
-  transform: translateY(-45%);
-  animation: blink 0.7s infinite;
+  bottom: 100px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
 }
 
-.info.stop-blinking::before {
-  animation: none;
+.scrolldown span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid var(--primary-font-color);
+  border-right: 2px solid var(--primary-font-color);
+  animation: scroll 1.5s linear infinite;
+  opacity: 0;
 }
 
-@keyframes blink {
-  50% {
+.scrolldown span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2) {
+  transform: translate(0, 0);
+  animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3) {
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
+}
+
+@keyframes logo_appear {
+  0% { 
+    opacity: 0; 
+  }
+  70% {
+    opacity: 0; 
+    transform: translateY(30px) scale(0.9);
+  }
+  100% { 
+    opacity: 0.1; 
+  }
+}
+
+@keyframes slide_in_me {
+  0% {
+    transform: translateX(-100vw) translateY(70px);
+  }
+  90% {
+    transform: translateX(-100vw) translateY(70px);
+  }
+  100% {
+    transform: translateY(70px);
+  }
+}
+@keyframes slide_in_ai {
+  0% {
+    transform: translateX(-100vw) translateY(70px);
+  }
+  90% {
+    transform: translateX(-100vw) translateY(70px);
+  }
+  100% {
+    transform: translateY(70px);
+  }
+}
+@keyframes slide_in_student {
+  0% {
+    transform: translateX(-100vw) translateY(70px);
+  }
+  90% {
+    transform: translateX(-100vw) translateY(70px);
+  }
+  100% {
+    transform: translateY(70px);
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    top: -5px;
+    left: -5px;
     opacity: 0;
   }
-} */
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%,100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
 
 /* ==================================== Experience Section ==================================== */
 
@@ -296,7 +387,6 @@ a {
   justify-content: center;
   text-align: center;
   background-color: #e5e5e5;
-
 }
 
 .job_logo {
@@ -353,7 +443,6 @@ a {
   flex-direction: column;
   gap: 100px;
   transform: translateY(-50px);
-  /* background: red; */
 }
 
 #education_title {
@@ -610,6 +699,11 @@ footer {
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 850px) {
+
+  section {
+    width: 30em;
+  }
+
   .nav_menu {
     position: fixed;
     left: -100%;
@@ -653,4 +747,105 @@ footer {
     visibility: visible;
     transform: translateX(0);
   }
+  
+  /* ============== About Section ============== */
+  .about_logo {
+    width: 350px;
+  }
+
+  .name {
+    font-size: 4.5em;
+    width: 90%;
+    display: block;
+    word-wrap: normal;
+  }
+
+  .info {
+    font-size: 1.5em;
+    height: 30px;
+  }
+
+  /* ============== Experience Section ============== */
+  #experience_title {
+    font-size: 4em;
+    transform: translateY(20px);
+  }
+
+  .flip_cards {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .card_container {
+    width: 28em;
+    height: 25em;
+  }
+
+  .company {
+    font-size: 40px;
+  }
+
+  .job_title {
+    font-size: 25px;
+  }
+
+  .back {
+    padding: 0 40px;
+    font-size: 19px;
+  }
+
+  /* ============== Education Section ============== */
+  #education_section {
+    flex-direction: column;
+  }
+
+  .left_container {
+    transform: translateY(10px);
+    gap: 30px
+  }
+
+  .education_containter {
+    gap: 30px;
+    width: 22em;
+  }
+
+  .university-name, .degree, .education-date, .divider {
+    width: 100%;
+    display: block;
+    word-wrap: normal;
+  }
+
+  #csu-global_logo {
+    width: 120px;
+  }
+  
+  #msoe_logo {
+    width: 90px
+  }
+
+  /* ============== Connect Section ============== */
+  .contact-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    width: 30em;
+    /* background: red; */
+  }
+
+  #connect_title {
+    font-size: 4em;
+  }
+
+  .contact-inputs, .contact-right {
+    width: 28em;
+  }
+
+  .breakdown, .contact-email, .contact-header {
+    font-size: 20px;
+}
+
+
+
 }

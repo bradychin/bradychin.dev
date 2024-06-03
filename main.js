@@ -15,8 +15,8 @@ if (navClose) {
 }
 
 // Typewriter
-const dynamicText = document.querySelector('.finfo')
-const words = ['Mechanical Engineer', 'A.I. Engineer', 'Hockey Player']
+const dynamicText = document.querySelector('.type_name')
+const words = ['Brady Chin']
 let wordIndex = 0
 let charIndex = 1
 let isDeleting = false
@@ -30,17 +30,7 @@ const typeEffect = () => {
     if (!isDeleting && charIndex < currentWord.length) {
         // If condition is true, type next character
         charIndex++
-        setTimeout(typeEffect, 100)
-    } else if (isDeleting && charIndex > 0) {
-        // If condition is true, remove the previous character
-        charIndex--
-        setTimeout(typeEffect, 50)
-    } else {
-        // If word is deleted, switch to the next word
-        isDeleting = !isDeleting
-        dynamicText.classList.remove('stop-blinking')
-        wordIndex = !isDeleting ? (wordIndex+1) % words.length : wordIndex
-        setTimeout(typeEffect, 1300)
-    }
+        setTimeout(typeEffect, 150)
+    } 
 }
 typeEffect()
