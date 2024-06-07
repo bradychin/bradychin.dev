@@ -701,7 +701,8 @@ footer {
 @media screen and (max-width: 850px) {
 
   section {
-    width: 30em;
+    width: 90vw;
+    height: 100vh;
   }
 
   .nav_menu {
@@ -749,6 +750,11 @@ footer {
   }
   
   /* ============== About Section ============== */
+
+  .intro {
+    transform: translateY(-5vh);
+  }
+
   .about_logo {
     width: 350px;
   }
@@ -765,33 +771,51 @@ footer {
     height: 30px;
   }
 
-  /* ============== Experience Section ============== */
-  #experience_title {
-    font-size: 4em;
-    transform: translateY(20px);
+  .scrolldown {
+    width: 20px;
+    height: 20px;
   }
 
+  .scrolldown span:nth-child(1) {
+    transform: translate(-10px, -10px);
+  }
+  .scrolldown span:nth-child(2) {
+    transform: translate(0, 0);
+  }
+  .scrolldown span:nth-child(3) {
+    transform: translate(10px, 10px);
+  }
+
+  /* ============== Experience Section ============== */
+  #experience_title {
+    font-size: 2.5em;
+    transform: translateY(20px);
+  }
   .flip_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1em;
   }
 
   .card_container {
-    width: 28em;
-    height: 25em;
+    width: 75vw;
+    height: 70vw;
   }
 
   .company {
-    font-size: 40px;
+    font-size: 22px;
   }
 
   .job_title {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .back {
     padding: 0 40px;
-    font-size: 19px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   /* ============== Education Section ============== */
@@ -799,14 +823,18 @@ footer {
     flex-direction: column;
   }
 
+  #education_title {
+    font-size: 2.5em;
+  }
+
   .left_container {
-    transform: translateY(10px);
+    transform: translateY(50px);
     gap: 30px
   }
 
   .education_containter {
-    gap: 30px;
-    width: 22em;
+    gap: 20px;
+    width: 90vw;
   }
 
   .university-name, .degree, .education-date, .divider {
@@ -820,7 +848,28 @@ footer {
   }
   
   #msoe_logo {
-    width: 90px
+    width: 90px;
+  }
+
+  .university-name {
+    font-size: 20px;
+  }
+
+  .degree {
+    font-size: 16px;
+  }
+
+  .education-date {
+    font-size: 15px;
+  }
+  .course-work {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .course-work-description {
+    font-size: 15px;
+    line-height: 18px;
   }
 
   /* ============== Connect Section ============== */
@@ -830,21 +879,18 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 20px 0 0 0;
-    width: 30em;
   }
 
   #connect_title {
-    font-size: 4em;
+    font-size: 2.5em;
   }
 
   .contact-inputs, .contact-right {
-    width: 28em;
+    width: 90vw;
   }
 
   .breakdown, .contact-email, .contact-header {
     font-size: 20px;
-}
-
-
+  }
 
 }
