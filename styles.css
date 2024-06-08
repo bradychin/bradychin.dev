@@ -43,7 +43,7 @@ main {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   width: 70em;
 }
 
@@ -701,8 +701,8 @@ footer {
 @media screen and (max-width: 850px) {
 
   section {
-    width: 90vw;
-    height: 100vh;
+    width: 95vw;
+    min-height: 100vh;
   }
 
   .nav_menu {
@@ -756,7 +756,7 @@ footer {
   }
 
   .about_logo {
-    width: 350px;
+    width: 300px;
   }
 
   .name {
@@ -774,6 +774,7 @@ footer {
   .scrolldown {
     width: 20px;
     height: 20px;
+    transform: translateY(60px) rotate(45deg);
   }
 
   .scrolldown span:nth-child(1) {
@@ -789,7 +790,7 @@ footer {
   /* ============== Experience Section ============== */
   #experience_title {
     font-size: 2.5em;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
   .flip_cards {
     display: flex;
@@ -800,16 +801,24 @@ footer {
   }
 
   .card_container {
-    width: 75vw;
+    width: 90vw;
     height: 70vw;
   }
 
+  .job_logo {
+    width: 80%;
+  }
+  
   .company {
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .job_title {
     font-size: 20px;
+  }
+
+  .job_date {
+    font-size: 12px;
   }
 
   .back {
@@ -828,7 +837,7 @@ footer {
   }
 
   .left_container {
-    transform: translateY(50px);
+    transform: translateY(55px);
     gap: 30px
   }
 
@@ -860,16 +869,19 @@ footer {
   }
 
   .education-date {
-    font-size: 15px;
+    font-size: 12px;
   }
   .course-work {
-    font-size: 15px;
-    line-height: 15px;
+    line-height: 16px;
+  }
+
+  .course-work-title {
+    font-size: 16px;
   }
 
   .course-work-description {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    padding: 5px 0px 10px 25px;
   }
 
   /* ============== Connect Section ============== */
@@ -878,19 +890,33 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    padding: 20px 0 0 0;
+    padding: 60px 0 20px 0;
+    gap: 20px;
   }
 
   #connect_title {
     font-size: 2.5em;
+    transform: translateY(70px);
   }
 
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
   .contact-inputs, .contact-right {
-    width: 90vw;
+    width: 95vw;
   }
 
   .breakdown, .contact-email, .contact-header {
-    font-size: 20px;
+    font-size: 16px;
   }
 
+  footer {
+    height: 30px;
+  }
+
+  #copyrights {
+    padding-top: 7px;
+  }
 }
