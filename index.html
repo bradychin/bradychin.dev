@@ -13,14 +13,22 @@
 
 <body>
 
+  <!-- Trailing dots container -->
+  <div class="cursor-trail">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+
   <header>
     <nav>
-      <div class="logo">[Insert logo]</div>
+      <div class="logo">
+        <a href="#landing"><img src="assets/bc-logo-black.png"></a>
+      </div>
       <ul>
         <li><a href="#landing">Home</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -33,6 +41,11 @@
         <h2>Field Engineer</h2>
         <p>Aspiring AI Robotics Engineer</p>
       </div>
+      <div class="arrow-scroll">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
     </section>
 
     <!-- Work Experience Section -->
@@ -41,25 +54,36 @@
         <h2>Work Experience</h2>
 
         <div class="job">
-          <h3>Field Engineer</h3>
-          <p class="company">ViTrox Americas Inc. | 2022 – Present</p>
-          <ul>
-            <li>Developed and deployed AI-driven tools for troubleshooting.</li>
-            <li>Collaborated with cross-functional teams to improve customer success.</li>
-            <li>Optimized workflows with automation, reducing downtime by X%.</li>
-          </ul>
+          <div>
+            <h3>Field Engineer</h3>
+            <p class="company">ViTrox Americas Inc. | 2022 – Present</p>
+            <ul>
+              <li>Achievement or responsibility 1.</li>
+              <li>Achievement or responsibility 2.</li>
+              <li>Achievement or responsibility 3.</li>
+              <li>Achievement or responsibility 4.</li>
+            </ul>
+          </div>
+          <div class="vitrox-job-logo">
+            <img src="assets/vitrox-v-logo.png">
+          </div>
         </div>
 
         <div class="job">
-          <h3>Quality Engineer</h3>
-          <p class="company">Foxconn Industrial Internet | 2021 – 2022</p>
-          <ul>
-            <li>Achievement or responsibility 1.</li>
-            <li>Achievement or responsibility 2.</li>
-          </ul>
+          <div>
+            <h3>Quality Engineer</h3>
+            <p class="company">Foxconn Industrial Internet | 2021 – 2022</p>
+            <ul>
+              <li>Achievement or responsibility 1.</li>
+              <li>Achievement or responsibility 2.</li>
+              <li>Achievement or responsibility 3.</li>
+              <li>Achievement or responsibility 4.</li>
+            </ul>
+          </div>
+          <div class="fii-job-logo">
+            <img src="assets/fii-logo.png">
+          </div>
         </div>
-
-        <!-- Add more jobs as needed -->
       </div>
     </section>
 
@@ -69,22 +93,52 @@
         <h2>Education</h2>
 
         <div class="school">
-          <h3>Master’s in Artificial Intelligence & Machine Learning</h3>
-          <p class="institution">Colorado State University Global | 2025</p>
+          <div class="school-row">
+            <div class="csu-global-logo">
+              <img src="assets/csu-global-logo.png" alt="CSU Global Logo">
+            </div>
+            <div class="school-content">
+              <h3>Master of Science in Artificial Intelligence & Machine Learning</h3>
+              <p class="institution">Colorado State University Global | 2024-2025</p>
+            </div>
+          </div>
+          <div class="coursework">
+            <p><strong>Coursework</strong> </p>
+            <ul>
+              <li>Achievement or responsibility 1.</li>
+              <li>Achievement or responsibility 2.</li>
+            </ul>
+          </div>
         </div>
 
         <div class="school">
-          <h3>Bachelor’s in Mechanical Engineering</h3>
-          <p class="institution">Milwaukee School of Engineering | 20XX</p>
+          <div class="school-row">
+            <div class="msoe-logo">
+              <img src="assets/msoe-logo.jpg" alt="MSOE Logo">
+            </div>
+            <div class="school-content">
+              <h3>Bachelor of Science in Mechanical Engineering</h3>
+              <p class="institution">Milwaukee School of Engineering | 2018-2021</p>
+            </div>
+          </div>
+          <div class="coursework">
+            <p><strong>Coursework</strong> </p>
+            <ul>
+              <li>Achievement or responsibility 1.</li>
+              <li>Achievement or responsibility 2.</li>
+            </ul>
+          </div>
         </div>
-
-        <!-- Optionally add relevant coursework or honors -->
+        
       </div>
     </section>
+
   </main>
-  
   <footer>
       <p id="copyrights">Copyright © 2024 Brady Chin. All rights reserved.</p>
-  </footer>   
+  </footer> 
+  
+  <script src="js/main.js"></script>
+  
 </body>
 </html>

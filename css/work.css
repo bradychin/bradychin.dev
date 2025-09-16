@@ -2,16 +2,14 @@
   background-color: #f7f7f7; /* subtle contrast from landing */
 }
 
-#work h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .job {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 40px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ddd; /* subtle separation */
+  border-bottom: 1px solid #ddd;
+  gap: 20px; /* spacing between content and logo */
 }
 
 .job h3 {
@@ -21,7 +19,7 @@
 
 .job .company {
   font-style: italic;
-  color: #555;
+  color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
 
@@ -32,4 +30,25 @@
 
 .job ul li {
   margin-bottom: 8px;
+}
+
+.vitrox-job-logo img {
+  max-height: 215px;
+  object-fit: contain;
+}
+
+.fii-job-logo img {
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.vitrox-job-logo img,
+.fii-job-logo img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.vitrox-job-logo img:hover,
+.fii-job-logo img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
