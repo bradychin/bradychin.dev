@@ -42,13 +42,25 @@
   /* Work Section */
   .job {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 15px;
   }
 
-  .vitrox-job-logo img,
-  .fii-job-logo img {
+  .job > div:not(.vitrox-job-logo, .fii-job-logo) {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .vitrox-job-logo, .fii-job-logo {
+    order: -1;
+  }
+
+  .vitrox-job-logo img {
     max-height: 120px;
+  }
+
+  .fii-job-logo img {
+    max-height: 80px;
   }
 
   /* Education Section */

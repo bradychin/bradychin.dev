@@ -3,6 +3,7 @@
 }
 
 .school {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
@@ -16,48 +17,15 @@
   margin-bottom: 5px;
 }
 
-.school-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
 .school .institution {
   font-style: italic;
   color: var(--secondary-text-color);
   margin-bottom: 10px;
 }
 
-.school-content {
-  flex: 1;
-}
-
-.csu-global-logo img {
-  max-height: 100px;
-  object-fit: contain;
-}
-
-.msoe-logo img {
-  max-height: 80px;
-  object-fit: contain;
-  padding-left: 20px;
-}
-
-.coursework {
-  margin-top: 10px; /* spacing below the row */
-  padding-left: 20px; /* optional, indent slightly */
-  font-size: 0.95rem;
-}
-
-.coursework p {
-  padding-bottom: 10px;
-  font-size: 1.1rem;
-}
-
 .school ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 .school ul li {
@@ -66,6 +34,7 @@
 
 .csu-global-logo img,
 .msoe-logo img {
+  object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 

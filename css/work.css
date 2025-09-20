@@ -25,25 +25,16 @@
 
 .job ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 .job ul li {
   margin-bottom: 8px;
 }
 
-.vitrox-job-logo img {
-  max-height: 215px;
-  object-fit: contain;
-}
-
-.fii-job-logo img {
-  max-height: 140px;
-  object-fit: contain;
-}
-
 .vitrox-job-logo img,
 .fii-job-logo img {
+  object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
