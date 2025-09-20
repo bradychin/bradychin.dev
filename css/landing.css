@@ -39,20 +39,6 @@
   margin-bottom: 30px;
 }
 
-.cta-btn {
-  display: inline-block;
-  padding: 12px 30px;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
-
-.cta-btn:hover {
-  background-color: var(--accent-color);
-}
-
 .social-links {
   display: flex;
   justify-content: center;

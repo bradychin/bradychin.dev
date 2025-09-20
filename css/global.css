@@ -182,6 +182,78 @@ h2 {
   margin-bottom: 50px;
 }
 
+.off-screen-menu {
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: .3s ease;
+}
+
+.off-screen-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  list-style: none;
+  background-color: green;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+
+.ham-menu {
+  height: 50px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+}
+
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: var(--primary-text-color);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%
+}
+
+.ham-menu span:nth-child(3) {
+  top: 75%
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
 /* Footer */
 footer {
     margin: 0;
