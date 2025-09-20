@@ -7,7 +7,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 40px;
-  background-color: #fefefe;
+  background-color: var(--header-color);
   box-shadow: 0 2px 14px rgba(0,0,0,0.1);
   z-index: 1000;
 }
@@ -103,7 +103,7 @@ header nav ul li a:focus::after {
 
 /* ---------------------- Side menu ---------------------- */
 .off-screen-menu {
-  background-color: red;
+  background-color: var(--side-menu-background-color);
   height: 100vh;
   width: 100%;
   max-width: 450px;
@@ -126,7 +126,6 @@ header nav ul li a:focus::after {
   align-items: start;
   text-align: center;
   list-style: none;
-  background-color: green;
 }
 
 .off-screen-menu.active {
@@ -178,7 +177,7 @@ header nav ul li a:focus::after {
 footer {
     margin: 0;
     bottom: 0;
-    background-color: #fefefe;
+    background-color: var(--footer-color);
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
     height: 40px;
 }

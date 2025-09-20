@@ -1,17 +1,12 @@
-/* ============================
-   Responsive Styles
-   ============================ */
-
-/* ----------------------------
-   Mobile adjustments (<768px)
-   ---------------------------- */
+/* ---------------------- Mobile adjustments (<768px) ---------------------- */
 @media (max-width: 767px) {
   /* Nav bar */
   #navbar-social-placeholder {
     display: none;
   }
 
-  .nav-links li a {
+  .nav-links li a, 
+  .nav-links li:not(:last-child)::after {
     display: none;
   }
   
@@ -90,10 +85,8 @@
     max-height: 9rem;
   }
 }
-
-/* ----------------------------
-   Tablet / Small Laptop (768px - 1024px)
-   ---------------------------- */
+   
+/* ---------------------- Tablet / Small Laptop (768px - 1024px) ---------------------- */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Nav Bar */
   header nav {
@@ -171,9 +164,7 @@
   }
 }
 
-/* ----------------------------
-   Desktop (>1024px)
-   ---------------------------- */
+/* ---------------------- Desktop (>1024px) ---------------------- */
 @media (min-width: 1025px) {
   /* nav bar */
   .social-links.in-nav {

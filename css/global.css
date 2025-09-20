@@ -1,15 +1,19 @@
 :root {
+  /* Colors */
+  --header-color: #fefefe;
+  --primary-bg: #fdfaf3;
+  --secondary-bg: #ffffff;
+  --side-menu-background-color: #fdfaf3;
+  --footer-color: #fefefe;
+
   --primary-text-color: #333333;
   --secondary-text-color: #555555;
   --accent-color: #17a2b8;
+  --border-color: #dddddd;
 
-  --accent-color: #007bff;      /* bright blue for highlights, links, dots */
-  --accent-hover: #0056b3;      /* darker blue for hover states */
-  --primary-bg: #fdfaf3;        /* creamy white background */
-  --secondary-bg: #ffffff;      /* slightly brighter section backgrounds */
-  --text-color: #333333;        /* main text */
-  --subtext-color: #555555;     /* secondary text / captions */
-  --border-color: #dddddd;      /* subtle borders */
+  /* Fonts */
+  --primary-font: 'Roboto';
+  --heading-font: 'Playfair Display', serif;
 }
 
 /* ---------------------- Reset & global ----------------------*/
@@ -24,7 +28,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: var(--primary-font);
   color: var(--primary-text-color);
   line-height: 1.6;
   background-color: #fefefe;
