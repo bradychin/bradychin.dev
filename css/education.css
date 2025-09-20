@@ -1,5 +1,6 @@
+/* ---------------------- Education section ---------------------- */
 #education {
-  background-color: #fff; /* alternate from Work section */
+  background-color: #fff; 
 }
 
 .school {
@@ -8,8 +9,7 @@
   align-items: center;
   margin-bottom: 40px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-  gap: 20px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .school h3 {
@@ -25,7 +25,6 @@
 
 .school ul {
   list-style-type: disc;
-  padding-left: 50px;
 }
 
 .school ul li {

@@ -6,13 +6,18 @@
    Mobile adjustments (<768px)
    ---------------------------- */
 @media (max-width: 767px) {
-  /* Landing Section */
-  #landing {
-    height: 100vh; /* let content flow naturally */
+  /* Nav bar */
+  #navbar-social-placeholder {
+    display: none;
   }
 
+  .nav-links li a {
+    display: none;
+  }
+  
+  /* Landing Section */
   .landing-content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .landing-content h2 {
@@ -31,19 +36,14 @@
     font-size: 40px;
   }
 
-  .arrow-scroll {
-    bottom: 5vh;
-  }
-
-  .nav-links li a {
-    display: none;
-  }
-
   /* Work Section */
   .job {
     flex-direction: column;
-    align-items: center;
     gap: 15px;
+  }
+
+  .job ul {
+    padding-left: 30px;
   }
 
   .job > div:not(.vitrox-job-logo, .fii-job-logo) {
@@ -56,28 +56,38 @@
   }
 
   .vitrox-job-logo img {
-    max-height: 120px;
+    max-height: 10rem;
   }
 
   .fii-job-logo img {
-    max-height: 80px;
+    max-height: 6rem;
   }
 
   /* Education Section */
-  .school-row {
+  .school {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 15px;
   }
 
-  .csu-global-logo img,
+  .school ul {
+    padding-left: 30px;
+  }
+
+  .school > div:not(.csu-global-logo, .msoe-logo) {
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .csu-global-logo, .msoe-logo {
+    order: -1;
+  }
+
+  .csu-global-logo img {
+    max-height: 10rem;
+  }
+
   .msoe-logo img {
-    max-height: 80px;
-    padding-left: 0;
-  }
-
-  .coursework {
-    padding-left: 0;
-    margin-top: 15px;
+    max-height: 9rem;
   }
 }
 
@@ -85,6 +95,27 @@
    Tablet / Small Laptop (768px - 1024px)
    ---------------------------- */
 @media (min-width: 768px) and (max-width: 1024px) {
+  /* Nav Bar */
+  header nav {
+    padding: 10px 20px;
+  }
+
+  .social-links.in-nav {
+    gap: 2rem;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links li:not(:last-child)::after {
+    margin-left: 10px;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
   /* Landing Section */
   .landing-content h1 {
     font-size: 6rem;
@@ -108,29 +139,35 @@
     gap: 20px;
   }
 
-  .vitrox-job-logo img,
-  .fii-job-logo img {
-    max-height: 160px;
+  .job ul {
+    padding-left: 40px;
   }
 
-  .ham-menu {
-    display: none;
+  .vitrox-job-logo img {
+    max-height: 12rem;
+  }
+
+  .fii-job-logo img {
+    max-height: 7.5rem;
   }
 
   /* Education Section */
-  .school-row {
+  .school {
     flex-direction: row;
-    align-items: center;
     gap: 20px;
   }
 
-  .csu-global-logo img,
-  .msoe-logo img {
-    max-height: 90px;
+  .school ul {
+    padding-left: 40px;
   }
 
-  .coursework {
-    padding-left: 15px;
+  .csu-global-logo img {
+    max-height: 12rem;
+  }
+
+  .msoe-logo img {
+    max-height: 8rem;
+    padding-right: 3rem;
   }
 }
 
@@ -138,6 +175,23 @@
    Desktop (>1024px)
    ---------------------------- */
 @media (min-width: 1025px) {
+  /* nav bar */
+  .social-links.in-nav {
+    gap: 40px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links li:not(:last-child)::after {
+    margin-left: 20px;
+  }
+
+  .ham-menu {
+    display: none;
+  }
+
   /* Landing Section */
   .landing-content h1 {
     font-size: 8rem;
@@ -161,31 +215,34 @@
     gap: 40px;
   }
 
-  .vitrox-job-logo img,
-  .fii-job-logo img {
-    max-height: 215px;
+  .job ul {
+    padding-left: 40px;
+  }
+  
+  .vitrox-job-logo img {
+    max-height: 14rem;
   }
 
-  .ham-menu {
-    display: none;
+  .fii-job-logo img {
+    max-height: 9.5rem;
   }
 
   /* Education Section */
-  .school-row {
+  .school {
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
+  }
+
+  .school ul {
+    padding-left: 40px;
   }
 
   .csu-global-logo img {
-    max-height: 100px;
+    max-height: 14rem;
   }
 
   .msoe-logo img {
-    max-height: 80px;
-    padding-left: 20px;
-  }
-
-  .coursework {
-    padding-left: 20px;
+    max-height: 10rem;
+    padding-right: 3rem;
   }
 }

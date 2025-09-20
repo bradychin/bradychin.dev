@@ -1,4 +1,4 @@
-/* Landing section */
+/* ---------------------- Landing section ---------------------- */
 #landing {
   /* background: linear-gradient(135deg, #fefefe 0%, #fffaf0 100%); */
   position: relative;
@@ -8,41 +8,24 @@
   align-items: center;
   height: 100vh;
   text-align: center;
-  padding: 0 20px;
   overflow: hidden;
 }
 
-.landing-content h1,
-.landing-content h2,
-.landing-content p {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1.4s forwards;
-}
-
-.landing-content h1 { animation-delay: 0.2s; }
-.landing-content h2 { animation-delay: 0.4s; }
-.landing-content p  { animation-delay: 0.6s; }
-
 .landing-content h1 {
-  font-size: 8rem;
   margin-bottom: 10px;
 }
 
 .landing-content h2 {
-  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 .landing-content p {
-  font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 55px;
   margin-top: 20px;
   opacity: 0;
   transform: translateY(20px);
@@ -59,17 +42,10 @@
   transform: scale(1.2);
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Scroll Indicator */
+/* ---------------------- Scroll indicator ---------------------- */
 .arrow-scroll {
   position: absolute;
-  bottom: 10vh; /* distance from bottom */
+  bottom: 5vh; /* distance from bottom */
   left: 50%;    /* horizontal center */
   transform: translateX(-50%);
   display: flex;
@@ -88,9 +64,29 @@
   animation: scroll-bounce 1.5s infinite;
 }
 
-/* stagger arrows for smoother effect */
 .arrow:nth-child(2) { animation-delay: 0.2s; }
 .arrow:nth-child(3) { animation-delay: 0.4s; }
+
+/* ---------------------- Animations ---------------------- */
+.landing-content h1,
+.landing-content h2,
+.landing-content p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.4s forwards;
+}
+
+.landing-content h1 { animation-delay: 0.2s; }
+.landing-content h2 { animation-delay: 0.4s; }
+.landing-content p  { animation-delay: 0.6s; }
+
+/* ---------------------- Keyframes ---------------------- */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Bounce animation */
 @keyframes scroll-bounce {
