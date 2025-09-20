@@ -41,3 +41,22 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+// ------- Nav bar icons ------- //
+window.addEventListener("scroll", () => {
+  const socialLinks = document.querySelector(".social-links");
+  const navPlaceholder = document.getElementById("navbar-social-placeholder");
+
+  if (window.scrollY > 550) {
+    if (!navPlaceholder.querySelector(".social-links")) {
+      // clone the original icons
+      const clone = socialLinks.cloneNode(true);
+      clone.classList.add("in-nav"); // apply nav-specific styles
+      navPlaceholder.appendChild(clone);
+    }
+  } else {
+    // remove cloned version when scrolled back up
+    const navClone = navPlaceholder.querySelector(".social-links");
+    if (navClone) navClone.remove();
+  }
+});

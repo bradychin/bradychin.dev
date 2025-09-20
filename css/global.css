@@ -53,25 +53,52 @@ header nav {
   top: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo left, links right */
   align-items: center;
   padding: 10px 40px;
   background-color: #fefefe;
   box-shadow: 0 2px 14px rgba(0,0,0,0.1);
   z-index: 1000;
+
 }
 
 nav img {
   max-height: 40px;
 }
 
-nav ul {
+/* Center social links */
+#navbar-social-placeholder {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* perfectly centered */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Social links styling */
+.social-links.in-nav {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.social-links.in-nav i {
+  font-size: 32px;
+}
+
+.social-links.in-nav.fade-out {
+  opacity: 0;
+  transform: transform 0.2s ease, opacity 0.2s ease; /* optional: slide up as it fades */
+}
+
+/* Nav links on right */
+.nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
 }
 
-nav ul li a {
+.nav-links li a {
   text-decoration: none;
   font-size: 20px;
   transition: color 0.3s;
