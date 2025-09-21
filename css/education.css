@@ -1,0 +1,48 @@
+/* ---------------------- Education section ---------------------- */
+#education {
+  background-color: var(--primary-bg); 
+}
+
+.school {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.school h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.school .institution {
+  font-style: italic;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.school ul {
+  list-style-type: disc;
+}
+
+.school ul li {
+  margin-bottom: 8px;
+}
+
+.csu-global-logo img,
+.msoe-logo img {
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.csu-global-logo img:hover,
+.msoe-logo img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.school strong {
+  font-weight: 700;
+}

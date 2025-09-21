@@ -1,0 +1,44 @@
+/* ---------------------- Work section ---------------------- */
+#work {
+  background-color: var(--primary-bg);
+}
+
+.job {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.job h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.job .company {
+  font-style: italic;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.job ul {
+  list-style-type: disc;
+}
+
+.job ul li {
+  margin-bottom: 8px;
+}
+
+.vitrox-job-logo img,
+.fii-job-logo img {
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.vitrox-job-logo img:hover,
+.fii-job-logo img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
