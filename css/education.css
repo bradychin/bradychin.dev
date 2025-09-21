@@ -1,6 +1,6 @@
 /* ---------------------- Education section ---------------------- */
 #education {
-  background-color: #fff; 
+  background-color: var(--primary-bg); 
 }
 
 .school {
@@ -41,4 +41,8 @@
 .msoe-logo img:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
+}
+
+.school strong {
+  font-weight: 700;
 }

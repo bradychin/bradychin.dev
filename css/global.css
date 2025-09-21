@@ -1,18 +1,18 @@
 :root {
   /* Colors */
-  --header-color: #fefefe;
+  --header-color: #fdfaf3;
   --primary-bg: #fdfaf3;
   --secondary-bg: #ffffff;
   --side-menu-background-color: #fdfaf3;
   --footer-color: #fefefe;
 
-  --primary-text-color: #333333;
+  --primary-text-color: #1e1e1e;
   --secondary-text-color: #555555;
   --accent-color: #17a2b8;
   --border-color: #dddddd;
 
   /* Fonts */
-  --primary-font: 'Roboto';
+  --primary-font: 'Roboto', sans-serif;
   --heading-font: 'Playfair Display', serif;
 }
 
@@ -29,6 +29,7 @@ html {
 
 body {
   font-family: var(--primary-font);
+  font-weight: 100;
   color: var(--primary-text-color);
   line-height: 1.6;
   background-color: #fefefe;

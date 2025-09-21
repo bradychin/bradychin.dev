@@ -1,6 +1,6 @@
 /* ---------------------- Work section ---------------------- */
 #work {
-  background-color: #f7f7f7; /* subtle contrast from landing */
+  background-color: var(--primary-bg);
 }
 
 .job {

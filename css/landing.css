@@ -1,6 +1,6 @@
 /* ---------------------- Landing section ---------------------- */
 #landing {
-  /* background: linear-gradient(135deg, #fefefe 0%, #fffaf0 100%); */
+  background: var(--primary-bg);
   position: relative;
   display: flex;
   flex-direction: column;

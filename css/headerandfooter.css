@@ -115,7 +115,7 @@ header nav ul li a:focus::after {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   transition: .3s ease;
 }
 
@@ -126,6 +126,10 @@ header nav ul li a:focus::after {
   align-items: start;
   text-align: center;
   list-style: none;
+}
+
+#side-menu-social-links i {
+  font-size: 2rem;
 }
 
 .off-screen-menu.active {
@@ -140,7 +144,7 @@ header nav ul li a:focus::after {
 }
 
 .ham-menu span {
-  height: 5px;
+  height: 3px;
   width: 100%;
   background-color: var(--primary-text-color);
   border-radius: 25px;
