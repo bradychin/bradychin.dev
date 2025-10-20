@@ -1,6 +1,10 @@
 /* ---------------------- Mobile adjustments (<768px) ---------------------- */
 @media (max-width: 767px) {
   /* Nav bar */
+  header nav {
+    padding: 10px 20px;
+  }
+   
   #navbar-social-placeholder {
     display: none;
   }
@@ -29,6 +33,10 @@
     
   .social-links i {
     font-size: 40px;
+  }
+
+  .arrow-scroll {
+    bottom: 10vh;
   }
 
   /* Work Section */
