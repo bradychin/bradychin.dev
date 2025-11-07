@@ -1,5 +1,5 @@
 /* ---------------------- Mobile adjustments (<768px) ---------------------- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Nav bar */
   header nav {
     padding: 10px 20px;
