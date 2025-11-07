@@ -7,6 +7,7 @@
     <title>Reinforcement Learning Framework - Brady Chin</title>
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/headerandfooter.css">
+    <link rel="stylesheet" href="../css/rl-framework-project.css">
     <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,400,400i">
@@ -19,8 +20,6 @@
           <a href="../index.html"><img src="../assets/bc-logo-black.png"></a>
         </div>
 
-        <div id="navbar-social-placeholder"></div>
-
         <ul class="nav-links">
           <li><a href="../index.html#landing">Home</a></li>
           <li><a href="../index.html#projects">Projects</a></li>
@@ -30,10 +29,10 @@
 
         <div class="off-screen-menu">
           <ul>
-            <li><a href="../index.html#landing">Home</a></li>
-            <li><a href="../index.html#projects">Projects</a></li>
-            <li><a href="../index.html#work">Work</a></li>
-            <li><a href="../index.html#education">Education</a></li>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#education">Education</a></li>
             <div class="social-links" id="side-menu-social-links">
               <a href="mailto:brady@bradychin.dev"><i class="fa-solid fa-envelope"></i></a>
               <a href="https://github.com/bradychin"><i class="fa-brands fa-github"></i></a>
@@ -51,10 +50,387 @@
     </header>
 
     <main>
-      <section style="padding: 150px 20px;">
+      <section class="rl-project-detail">
         <div class="section-container">
-          <h2>Reinforcement Learning Framework</h2>
-          <p style="text-align: center; color: var(--secondary-text-color);">Project details coming soon...</p>
+          
+          <!-- Project Header -->
+          <div class="rl-project-header">
+            <h1>Reinforcement Learning Framework</h1>
+            <p style="color: var(--secondary-text-color); font-size: 1.2rem;">
+              Modular framework for training Reinforcement Learning agents
+            </p>
+            
+            <div class="rl-project-tags">
+              <span class="rl-tag">Reinforcement Learning</span>
+              <span class="rl-tag">Stable Baselines3</span>
+              <span class="rl-tag">Python</span>
+              <span class="rl-tag">Gymnasium</span>
+              <span class="rl-tag">Deep Learning</span>
+            </div>
+
+            <div class="rl-project-links">
+              <a href="https://github.com/bradychin/robogym" class="rl-link" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Overview Section -->
+          <div class="rl-section">
+            <h2>Project Overview</h2>
+            <p>
+              Developed a modular reinforcement learning framework allowing training 
+              and evaluating RL agents across multiple environments. The framework leverages Stable Baselines3 
+              for algorithm implementations and provides a flexible architecture for 
+              experimentation with different hyperparameters and training configurations.
+            </p>
+            <p>
+              This project demonstrates practical applications of reinforcement learning algorithms and is designed to be easily 
+              extensible, allowing for rapid prototyping and testing of different RL approaches.
+            </p>
+          </div>
+
+          <!-- Demo Video Section -->
+          <div class="rl-section">
+            <h2>Training Demonstration</h2>
+            <p>
+              Watch a trained PPO agent navigate the Walker2D environment in PyBullet. The agent has 
+              learned to coordinate its joints and maintain balance, achieving smooth forward 
+              locomotion and reaching a reward of 2400+.
+            </p>
+            
+            <div class="video-container">
+              <video controls loop>
+                <source src="../assets/videos/walker2d-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p class="video-caption">
+              Trained PPO agent demonstrating optimal landing strategy in Walker2D
+            </p>
+          </div>
+
+          <!-- Before/After Comparison Section -->
+          <div class="rl-section">
+            <h2>Hyperparameter Tuning Impact</h2>
+            
+            <div class="comparison-container">
+              <h3 class="comparison-title">Before vs. After Hyperparameter Optimization</h3>
+              <p style="text-align: center; color: var(--secondary-text-color); margin-bottom: 25px;">
+                Comparison demonstrating the impact of Optuna-based hyperparameter optimization on SAC performance 
+                in LunarLanderContinuous. The tuned agent (mean reward: 290.84) exhibits significantly smoother 
+                control, more efficient fuel usage, and more consistent successful landings compared to default 
+                hyperparameters.
+              </p>
+              
+              <div class="video-comparison">
+                <div class="video-item">
+                  <div class="video-label before">Before Tuning</div>
+                  <video autoplay loop muted playsinline>
+                    <source src="../assets/videos/lunarlandercontinuous-before-tuning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
+                <div class="video-item">
+                  <div class="video-label after">After Tuning</div>
+                  <video autoplay loop muted playsinline>
+                    <source src="../assets/videos/lunarlandercontinuous-after-tuning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Stack Section -->
+          <div class="rl-section">
+            <h2>Technologies Used</h2>
+            <div class="tech-showcase">
+              <div class="tech-badge">
+                <i class="fa-brands fa-python"></i>
+                <p>Python</p>
+              </div>
+              <div class="tech-badge">
+                <i class="fa-solid fa-brain"></i>
+                <p>Stable Baselines3</p>
+              </div>
+              <div class="tech-badge">
+                <i class="fa-solid fa-dumbbell"></i>
+                <p>Gymnasium</p>
+              </div>
+              <div class="tech-badge">
+                <i class="fa-solid fa-fire"></i>
+                <p>PyTorch</p>
+              </div>
+              <div class="tech-badge">
+                <i class="fa-solid fa-chart-simple"></i>
+                <p>TensorBoard</p>
+              </div>
+              <div class="tech-badge">
+                <i class="fa-solid fa-table"></i>
+                <p>NumPy</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Algorithms Section -->
+          <div class="rl-section">
+            <h2>Algorithms Implemented</h2>
+            <p>
+              The framework supports several reinforcement learning algorithms, each 
+              optimized for different types of control tasks and action spaces.
+            </p>
+            
+            <div class="algo-env-grid">
+              <div class="algo-card">
+                <h4><i class="fa-solid fa-brain"></i>PPO</h4>
+                <p>
+                  <strong>Proximal Policy Optimization:</strong> A policy gradient method that strikes a 
+                  balance between sample efficiency and ease of implementation. Ideal for continuous control tasks.
+                </p>
+              </div>
+
+              <div class="algo-card">
+                <h4><i class="fa-solid fa-network-wired"></i>A2C</h4>
+                <p>
+                  <strong>Advantage Actor-Critic:</strong> An actor-critic method that uses parallel 
+                  environments for efficient data collection. Great for faster training cycles.
+                </p>
+              </div>
+
+              <div class="algo-card">
+                <h4><i class="fa-solid fa-chart-line"></i>DQN</h4>
+                <p>
+                  <strong>Deep Q-Network:</strong> Value-based method using experience replay and target 
+                  networks. Perfect for discrete action spaces.
+                </p>
+              </div>
+
+              <div class="algo-card">
+                <h4><i class="fa-solid fa-robot"></i>SAC</h4>
+                <p>
+                  <strong>Soft Actor-Critic:</strong> Off-policy algorithm that maximizes both reward 
+                  and entropy. Excellent for continuous control with sample efficiency.
+                </p>
+              </div>
+
+              <div class="algo-card">
+                <h4><i class="fa-solid fa-arrows-left-right"></i>DDPG</h4>
+                <p>
+                  <strong>Deep Deterministic Policy Gradient:</strong> Off-policy actor–critic algorithm 
+                  that learns a deterministic policy. Good for continuous control but prone to instability 
+                  and over-estimation without careful tuning.
+                </p>
+              </div>
+
+              <div class="algo-card">
+                <h4><i class="fa-solid fa-clone"></i>TD3</h4>
+                <p>
+                  <strong>Twin Delayed DDPG:</strong> Improved variant of DDPG that fixes its weaknesses with 
+                  twin critics, delayed policy updates, and target smoothing. Much more stable and reliable 
+                  for continuous control.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Environments Section -->
+          <div class="rl-section">
+            <h2>Training Environments</h2>
+            <p>
+              Training and evaluation across multiple Gymnasium and PyBullet environments, from classic 
+              control problems to complex robotic locomotion tasks.
+            </p>
+            
+            <h3>Gymnasium Environments</h3>
+            <div class="algo-env-grid">
+              <div class="env-card">
+                <h4><i class="fa-solid fa-car"></i>CartPole-v1</h4>
+                <p>Balance a pole on a moving cart through precise control.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-gauge-high"></i>Pendulum-v1</h4>
+                <p>Swing up and balance an inverted pendulum with continuous control.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-circle-notch"></i>Acrobot-v1</h4>
+                <p>Swing a two-link robot arm to reach above a target height.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-rocket"></i>LunarLander-v2</h4>
+                <p>Land spacecraft safely using discrete thruster controls.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-rocket"></i>LunarLanderContinuous-v2</h4>
+                <p>Continuous control variant with smooth thruster adjustments.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-person-walking"></i>BipedalWalker-v3</h4>
+                <p>Train a 2D bipedal robot to walk across varied terrain.</p>
+              </div>
+            </div>
+
+            <h3>PyBullet Environments</h3>
+            <div class="algo-env-grid">
+              <div class="env-card">
+                <h4><i class="fa-solid fa-bug"></i>AntBulletEnv-v0</h4>
+                <p>Quadruped robot learning to walk and navigate efficiently.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-horse"></i>HalfCheetahBulletEnv-v0</h4>
+                <p>High-speed 2D running with a cheetah-inspired robot.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-frog"></i>HopperBulletEnv-v0</h4>
+                <p>Single-legged hopping robot balancing and forward movement.</p>
+              </div>
+
+              <div class="env-card">
+                <h4><i class="fa-solid fa-person"></i>Walker2DBulletEnv-v0</h4>
+                <p>Bipedal robot with two articulated legs learning stable balance and forward locomotion.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Approach Section -->
+          <div class="rl-section">
+            <h2>Technical Approach</h2>
+            
+            <h3>Framework Architecture</h3>
+            <p>
+              The framework follows a modular design pattern with separate components for environment 
+              setup, agent configuration, training loops, and evaluation metrics. This separation allows 
+              for easy swapping of algorithms and environments without restructuring the codebase.
+            </p>
+
+            <h3>Key Features</h3>
+            <div class="feature-grid">
+              <div class="feature-box">
+                <h4>Modular Design</h4>
+                <p>Clean separation of concerns with reusable components for training, evaluation, and logging.</p>
+              </div>
+
+              <div class="feature-box">
+                <h4>Hyperparameter Management</h4>
+                <p>YAML-based configuration files for easy experimentation with different parameters.</p>
+              </div>
+
+              <div class="feature-box">
+                <h4>Training Monitoring</h4>
+                <p>Real-time tracking of rewards, losses, and other metrics using TensorBoard integration.</p>
+              </div>
+
+              <div class="feature-box">
+                <h4>Model Checkpointing</h4>
+                <p>Automatic saving of best-performing models based on evaluation metrics.</p>
+              </div>
+
+              <div class="feature-box">
+                <h4>Multi-Environment Support</h4>
+                <p>Unified interface for training across different Gymnasium environments.</p>
+              </div>
+
+            </div>
+
+            <h3>Training Process</h3>
+            <p>
+              The training pipeline consists of several stages: environment initialization, agent 
+              creation with specified hyperparameters, iterative training with periodic evaluation, 
+              and final model demonstration. The framework supports both on-policy (PPO, A2C) and off-policy 
+              (DQN, SAC, DDPG, TD3) algorithms, each with tailored and optimized training loops.
+            </p>
+          </div>
+
+          <!-- Results Section -->
+          <div class="rl-section">
+            <h2>Results & Performance</h2>
+            <p>
+              After extensive training and hyperparameter tuning, the agents achieved strong performance 
+              across all tested environments. The PPO algorithm consistently demonstrated the best 
+              balance between sample efficiency and final performance.
+            </p>
+
+            <h3>Key Achievements</h3>
+            <ul>
+              <li>Walker2DBulletEnv-v0: Achieved 2403 reward with PPO through systematic hyperparameter optimization</li>
+              <li>Implemented Optuna-based Bayesian optimization reducing hyperparameter search time by efficiently exploring 50+ trial configurations</li>
+              <li>Built modular factory pattern architecture enabling rapid experimentation across 10 environments and 6 RL algorithms</li>
+              <li>Designed comprehensive evaluation framework with automated metrics tracking, TensorBoard integration, and JSON result logging</li>
+            </ul>
+
+            <h3>Hyperparameter Tuning Results</h3>
+            <p>
+              Systematic hyperparameter optimization led to significant improvements in agent performance. 
+              Key findings include the importance of learning rate scheduling, optimal batch sizes for 
+              different algorithms, and the critical role of entropy coefficient in exploration vs. 
+              exploitation balance.
+            </p>
+          </div>
+
+          <!-- Challenges Section -->
+          <div class="rl-section">
+            <h2>Challenges & Solutions</h2>
+            
+            <h3>High Variance and Seed Sensitivity</h3>
+            <p>
+              With identical hyperparameters, there was a major performance variability for the Walker2D environment (500-2400). This was 
+              due to random seed initializaiton having large impact on final results.
+            </p>
+            <strong>Solution:</strong><p>Implemented multi-seed validation methodology, running each configuration with multiple random 
+            seeds (42, 43, 44) to assess reproducibility and measure performance variance.</p>
+
+            <h3>Hyperparameter Stability</h3>
+            <p>
+              Optuna results showed fast early learning (due to low entropy coefficients) but caused catastropic forgetting during
+              longer training runs.
+            </p>
+            <strong>Solution:</strong><p>Initial hyperparameters were tuned on shorter timesteps 
+              (500k) for efficiency, followed by full-duration validation runs (2M timesteps).
+              Hyperparameters were then modified to allow for longer, more stable training.
+            </p>
+          </div>
+
+          <!-- Future Improvements Section -->
+          <!-- <div class="rl-section">
+            <h2>Future Improvements</h2>
+            <ul>
+              <li>Implement multi-agent reinforcement learning capabilities</li>
+              <li>Add support for custom environment wrappers and preprocessing</li>
+              <li>Integrate hyperparameter optimization using Optuna or Ray Tune</li>
+              <li>Develop a web-based dashboard for real-time training visualization</li>
+              <li>Expand to more complex environments (MuJoCo, PyBullet robotics)</li>
+              <li>Implement model-based RL algorithms for improved sample efficiency</li>
+              <li>Add distributed training support for large-scale experiments</li>
+              <li>Create pre-trained model zoo for transfer learning</li>
+            </ul>
+          </div> -->
+
+          <!-- Learning Outcomes Section -->
+          <!-- <div class="rl-section">
+            <h2>Learning Outcomes</h2>
+            <p>
+              This project provided comprehensive hands-on experience with modern reinforcement learning 
+              techniques and best practices for training stable, high-performing agents. Key takeaways include:
+            </p>
+            <ul>
+              <li>Deep understanding of policy gradient and value-based RL algorithms</li>
+              <li>Practical experience with hyperparameter tuning and training stabilization</li>
+              <li>Implementation of modular, production-ready ML frameworks</li>
+              <li>Skills in debugging and optimizing RL training pipelines</li>
+              <li>Knowledge of exploration strategies and reward shaping techniques</li>
+              <li>Experience with experiment tracking and reproducibility practices</li>
+            </ul>
+          </div> -->
+          
         </div>
       </section>
     </main>
@@ -63,7 +439,7 @@
         <p id="copyrights">Copyright © 2025 Brady Chin. All rights reserved.</p>
     </footer> 
     
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     
   </body>
 </html>

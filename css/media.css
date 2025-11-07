@@ -1,5 +1,5 @@
 /* ---------------------- Mobile adjustments (<768px) ---------------------- */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Nav bar */
   header nav {
     padding: 10px 20px;
@@ -33,6 +33,7 @@
     
   .social-links i {
     font-size: 40px;
+    color: var(--primary-text-color);
   }
 
   .arrow-scroll {
@@ -91,6 +92,31 @@
 
   .msoe-logo img {
     max-height: 9rem;
+  }
+
+  .rl-project-header h1 {
+    font-size: 2rem;
+  }
+
+  .rl-project-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rl-section {
+    padding: 25px;
+  }
+
+  .video-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .algo-env-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-showcase {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
    
@@ -170,6 +196,14 @@
     max-height: 8rem;
     padding-right: 3rem;
   }
+
+  .rl-project-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .video-comparison {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ---------------------- Desktop (>1024px) ---------------------- */
@@ -243,5 +277,13 @@
   .msoe-logo img {
     max-height: 10rem;
     padding-right: 3rem;
+  }
+
+  .rl-project-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .video-comparison {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
